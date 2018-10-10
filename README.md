@@ -1,1 +1,1 @@
-# Php Simple Mail Function
+# Simple Mail Function in Php
