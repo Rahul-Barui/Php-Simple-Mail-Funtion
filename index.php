@@ -1,21 +1,15 @@
 <?php
 	if(isset($_POST['send'])){
 			
-		$to = "rbaruimca22@gmail.com";
+		$to = "testingmail@gmail.com"; // Enter any valid Email
 		$subject = "Testing By RB";
 		
 		$message = "<b>This is HTML message.</b>";
 		$message .= "<h1>This is headline.</h1>";
 		
-		/*$header = "From:abc@somedomain.com \r\n";
-		$header .= "Cc:afgh@somedomain.com \r\n";
-		$header .= "MIME-Version: 1.0\r\n";
-		$header .= "Content-type: text/html\r\n";*/
-		
 		$headers = "MIME-Version: 1.0" . "\r\n";
 		$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-		//echo $to." | ".$message." | ".$subject; die;
 		$ok = mail($to,$subject,$message,$headers);
 
 		if($ok){
